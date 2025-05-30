@@ -50,9 +50,9 @@ this page lets you see the animations of the spinners in various FPS values!! to
 
 1. visit the website as noted by the link [at the beginning of this document](#windows-spinners).
 2. at the URL bar, key in the following URL query: `?version={ver}&type={typ}&fps={fps}` -- where:
-    - {ver} can be "1" or "2" (the spinner version)
-    - {type} can be "normal" or "condensed" (the font variation)
-    - {fps} can be any number in frames per second
+    - `{ver}` can be "1" or "2" (the spinner version)
+    - `{type}` can be "normal" or "condensed" (the font variation)
+    - `{fps}` can be any number in frames per second
 3. enjoy the spinner animation!!
 
 ## resources
