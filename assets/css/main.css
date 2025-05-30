@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Segoe Boot Semilight";
-  src: url("/assets/fonts/segoe_slboot.ttf");
+  src: url("/segoeLoaders/assets/fonts/segoe_slboot.ttf");
 }
 @font-face {
   font-family: "Segoe Boot Semilight Condensed";
-  src: url("/assets/fonts/segoen_slboot.ttf");
+  src: url("/segoeLoaders/assets/fonts/segoen_slboot.ttf");
 }
 @font-face {
   font-family: "Segoe Mono Boot";
-  src: url("/assets/fonts/segmono_boot.ttf");
+  src: url("/segoeLoaders/assets/fonts/segmono_boot.ttf");
 }
 
 html, body {
